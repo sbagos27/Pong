@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class Paddle : MonoBehaviour
 {
     public Rigidbody rb;
