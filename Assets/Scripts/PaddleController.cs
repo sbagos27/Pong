@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PaddleController : MonoBehaviour
 {
-    public InputActionReference moveAction; // Assign this in the Inspector
+    public InputActionReference moveAction; 
     public float speed = 5f;
 
     private void OnEnable()
@@ -18,7 +18,7 @@ public class PaddleController : MonoBehaviour
 
     private void Update()
     {
-        float moveInput = moveAction.action.ReadValue<Vector2>().y; // Read vertical input
+        float moveInput = moveAction.action.ReadValue<Vector2>().y; 
         transform.Translate(Vector3.up * moveInput * speed * Time.deltaTime);
     }
 }
