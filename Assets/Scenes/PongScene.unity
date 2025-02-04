@@ -376,9 +376,9 @@ GameObject:
   - component: {fileID: 802980275}
   - component: {fileID: 802980274}
   - component: {fileID: 802980273}
-  - component: {fileID: 802980272}
   - component: {fileID: 802980271}
   - component: {fileID: 802980270}
+  - component: {fileID: 802980272}
   m_Layer: 0
   m_Name: Right Paddle
   m_TagString: Untagged
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 0e299920f0820b64c9288670040dc60e, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -411,9 +411,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
-  m_DefaultActionMap: RightPaddle
+  m_DefaultActionMap: e2296f60-5704-47aa-b774-afa10d32f4df
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!54 &802980271
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 802980271}
   paddleSpeed: 5
-  move: {fileID: 9050787880438909066, guid: 0e299920f0820b64c9288670040dc60e, type: 3}
+  move: {fileID: 6856833187279159481, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
 --- !u!65 &802980273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -837,8 +837,8 @@ GameObject:
   - component: {fileID: 1955807416}
   - component: {fileID: 1955807415}
   - component: {fileID: 1955807414}
-  - component: {fileID: 1955807418}
   - component: {fileID: 1955807420}
+  - component: {fileID: 1955807418}
   - component: {fileID: 1955807419}
   m_Layer: 0
   m_Name: Left Paddle
@@ -961,7 +961,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: LeftPaddle
   m_SplitScreenIndex: -1
