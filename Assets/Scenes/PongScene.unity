@@ -379,6 +379,7 @@ GameObject:
   - component: {fileID: 802980271}
   - component: {fileID: 802980270}
   - component: {fileID: 802980272}
+  - component: {fileID: 802980277}
   m_Layer: 0
   m_Name: Right Paddle
   m_TagString: Untagged
@@ -413,7 +414,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
-  m_DefaultActionMap: e2296f60-5704-47aa-b774-afa10d32f4df
+  m_DefaultActionMap: RightPaddle
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!54 &802980271
@@ -457,7 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 802980271}
   paddleSpeed: 5
-  move: {fileID: 6856833187279159481, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
+  move: {fileID: -1361930401773752923, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
 --- !u!65 &802980273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -547,6 +548,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802980277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802980269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4540d8ba3fd45fe4ebc081a6af8721ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAction: {fileID: -1361930401773752923, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
+  speed: 5
 --- !u!1 &1044848388
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +855,7 @@ GameObject:
   - component: {fileID: 1955807420}
   - component: {fileID: 1955807418}
   - component: {fileID: 1955807419}
+  - component: {fileID: 1955807421}
   m_Layer: 0
   m_Name: Left Paddle
   m_TagString: Untagged
@@ -980,7 +996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1955807420}
   paddleSpeed: 5
-  move: {fileID: 7853206351849607767, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
+  move: {fileID: 4441672159420385600, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
 --- !u!54 &1955807420
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1008,6 +1024,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &1955807421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955807413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4540d8ba3fd45fe4ebc081a6af8721ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAction: {fileID: 4441672159420385600, guid: 3789aad28fdb9b14eab4c561fa50547a, type: 3}
+  speed: 5
 --- !u!1 &2109526707
 GameObject:
   m_ObjectHideFlags: 0
