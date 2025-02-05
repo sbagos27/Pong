@@ -12,6 +12,8 @@ public class Paddle : MonoBehaviour
     private Vector3 paddleDirection;
     
     public InputActionReference move;
+    
+    public AudioClip paddleHit;
   
     private void OnEnable()
     {
@@ -21,6 +23,13 @@ public class Paddle : MonoBehaviour
     private void OnDisable()
     {
         move.action.Disable();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        AudioSource audioSrc = GetComponent<AudioSource>();
+        audioSrc.clip = paddleHit;
+        audioSrc.Play();
     }
     
     void FixedUpdate()

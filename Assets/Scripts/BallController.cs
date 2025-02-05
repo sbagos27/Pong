@@ -42,7 +42,8 @@ public class BallController : MonoBehaviour
     
     public void Launch()
     {
-        
+        transform.rotation = Quaternion.identity;
+
         transform.position = new Vector3(10,0,0);
         
         float x = Random.Range(0, 2) == 0 ? -1 : 1;
