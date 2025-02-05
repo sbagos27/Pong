@@ -31,5 +31,6 @@ public class Paddle : MonoBehaviour
     void Update()
     {
         paddleDirection = move.action.ReadValue<Vector3>();
+        
     }
 }
